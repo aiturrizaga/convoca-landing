@@ -49,10 +49,11 @@ function shareResilientesOnWhatsapp() {
   shareWS("pages/resilientes/resilientes.html", "Los resilientes");
 }
 
+const adicionalPath = "/convoca-landing";
 // Main share functions
 function shareTW(page = "index.html", message) {
   var URI = window.location.origin;
-  var dir = URI + "/" + page;
+  var dir = URI + adicionalPath + "/" + page;
   var tit = message;
   var tit2 = encodeURIComponent(tit);
   window.open(
@@ -65,7 +66,7 @@ function shareTW(page = "index.html", message) {
 
 function shareFB(page = "index.html", message) {
   var URI = window.location.origin;
-  var dir = URI + "/" + page;
+  var dir = URI + adicionalPath + "/" + page;
   var tit = message;
   var tit2 = encodeURIComponent(tit);
   var dir2 = encodeURIComponent(dir);
@@ -79,7 +80,7 @@ function shareFB(page = "index.html", message) {
 
 function shareWS(page = "index.html", message) {
   var URI = window.location.origin;
-  var dir = URI + "/" + page;
+  var dir = URI + adicionalPath + "/" + page;
   var tit = message;
   var tit2 = encodeURIComponent(tit);
   window.open(
