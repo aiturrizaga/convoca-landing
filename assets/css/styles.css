@@ -66,6 +66,14 @@
   background-color: var(--lp-primary);
 }
 
+.bg-lp-secondary {
+  background-color: var(--lp-secondary);
+}
+
+.bg-lp-gray {
+  background-color: var(--lp-gray);
+}
+
 .rounded-icon {
   height: 2rem;
   width: 2rem;
@@ -92,6 +100,18 @@
   border: 1px solid #ffffff;
   background-color: #ffffff;
   color: var(--lp-primary);
+}
+
+.rounded-icon.lp-secondary {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: var(--lp-secondary);
+}
+
+.rounded-icon.lp-gray {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: var(--lp-gray);
 }
 
 .bd-card {
