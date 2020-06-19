@@ -242,6 +242,9 @@
   .bd-card-black {
     border-left-color: #000000;
   }
+  .codrops-header-special {
+    width: 28rem;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -273,4 +276,36 @@
     text-align: center;
     margin-bottom: 0.6rem;
   }
+}
+
+
+a img {
+	border: none;
+}
+
+.container-grid-images {
+	position: relative;
+	background: transparent url(../img/grid-images/light.png) fixed no-repeat center top;
+}
+
+.codrops-header-special {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  text-align: left;
+}
+
+.codrops-header-special h1 {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.8rem;
+  line-height: 2.6rem;
+  color: #fff;
+}
+
+.codrops-header-special .bd-line-title-white {
+  position: absolute;
+  top: 1.3rem;
+  margin-left: 1.8rem;
+  border-top: 0.2rem solid #ffffff;
+  width: 6rem;
 }
