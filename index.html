@@ -1,366 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Convoca</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logos/favicon.ico">
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convoca</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/logos/favicon.ico">
 
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-  </head>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-  <body>
-    <!-- Header section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img
-          src="assets/img/logos/logo-dark.png"
-          class="img-fluid"
-          width="130"
-          height="50"
-          alt="Convoca logo"
-          loading="lazy"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto u-bootstrap-navbar-center">
-          <li class="nav-item">
-            <a class="nav-link nav-border-top-blue h6" href="pages/inolvidables/inolvidables.html"
-              >Los inolvidables</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-border-top-red h6" href="pages/imprescindibles/imprescindibles.html"
-              >Los imprescindibles</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-border-top-gray h6" href="pages/resilientes/resilientes.html"
-              >Los resilientes</a
-            >
-          </li>
-        </ul>
-        <span class="mr-2">
-          COMPARTE
-        </span>
-        <div class="d-flex align-items-center justify-content-center">
-          <a href="javascript:shareIndexOnFacebook()" style="text-decoration: none;">
-            <div class="rounded-icon dark mr-2">
-              <i class="fab fa-facebook-f"></i>
-            </div>
-          </a>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
 
-          <a href="javascript:shareIndexOnTwitter()" style="text-decoration: none;">
-            <div class="rounded-icon dark mr-2">
-              <i class="fab fa-twitter"></i>
-            </div>
-          </a>
+<body>
+  <!-- Header section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand center-logo" href="#">
+      <img src="assets/img/logos/logo-dark.png" class="img-fluid" width="130" height="50" alt="Convoca logo"
+        loading="lazy" />
+    </a>
+    <ul class="navbar-nav mr-auto u-bootstrap-navbar-center">
+      <li class="nav-item">
+        <a class="nav-link nav-border-top-blue h6" href="pages/inolvidables/inolvidables.html">Los inolvidables</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-border-top-red h6" href="pages/imprescindibles/imprescindibles.html">Los
+          imprescindibles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-border-top-gray h6" href="pages/resilientes/resilientes.html">Los resilientes</a>
+      </li>
+    </ul>
+    <span class="mr-2 d-none d-lg-block">
+      COMPARTE
+    </span>
+    <div class="d-none d-lg-block">
+      <div class="d-flex align-items-center justify-content-center">
+        <a href="javascript:shareIndexOnFacebook()" style="text-decoration: none;">
+          <div class="rounded-icon dark mr-2">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </a>
 
-          <a href="javascript:shareIndexOnWhatsapp()" style="text-decoration: none;">
-            <div style="font-size: 2rem; color: #000000;">
-              <i class="fab fa-whatsapp"></i>
-            </div>
-          </a>
-        </div>
+        <a href="javascript:shareIndexOnTwitter()" style="text-decoration: none;">
+          <div class="rounded-icon dark mr-2">
+            <i class="fab fa-twitter"></i>
+          </div>
+        </a>
+
+        <a href="javascript:shareIndexOnWhatsapp()" style="text-decoration: none;">
+          <div style="font-size: 2rem; color: #000000;">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+        </a>
       </div>
-    </nav>
-    <!-- End: Header section -->
+    </div>
+  </nav>
+  <!-- End: Header section -->
 
-    <div class="container-fluid">
-      <!-- Fila 01 -->
-      <div class="row">
-        <div
-          class="col-md-2 div-pic-2"
-          style="
+  <div class="container-fluid">
+    <!-- Fila 01 -->
+    <div class="row">
+      <div class="col-md-2 div-pic-2" style="
             background-image: url('assets/img/resilientes/resilientes_Walter_Cordova_Ramirez.jpg');
-          "
-        ></div>
-        <div
-          class="col-md-2 div-pic-2"
-          style="
+          "></div>
+      <div class="col-md-2 div-pic-2" style="
             background-image: url('assets/img/imprescindibles/imprescindible_ANA_MARIA_ANGULO.jpg');
-          "
-        ></div>
-        <div
-          class="col-md-2 div-pic-2"
-          style="
+          "></div>
+      <div class="col-md-2 div-pic-2" style="
             background-image: url('assets/img/resilientes/resilientes_Violenta_Quispe.jpg');
-          "
-        ></div>
-        <div
-          class="col-md-2 div-pic-2"
-          style="
+          "></div>
+      <div class="col-md-2 div-pic-2" style="
             background-image: url('assets/img/inolvidables/INOLVIDABLE_JOSE_SALDARRIAGA.jpg');
-          "
-        ></div>
-        <div
-          class="col-md-4 div-pic-2"
-          style="
+          "></div>
+      <div class="col-md-4 div-pic-2" style="
             background-image: url('assets/img/imprescindibles/imprescindible_JAZMIN_AUCANTINCO-xl.jpg');
-          "
-        ></div>
-      </div>
-      <!-- End: Fila 01 -->
+          "></div>
+    </div>
+    <!-- End: Fila 01 -->
 
-      <!-- Fila 02 -->
-      <div class="row">
-        <div class="col-md-4">
-          <div class="row">
-            <div
-              class="col-md-12 div-pic-2"
-              style="
+    <!-- Fila 02 -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12 div-pic-2" style="
                 background-image: url('assets/img/resilientes/resilientes_Beatriz_Cubas_Martinez-xl.jpg');
-              "
-            >
-              <div class="pic-titulo pointer">
-                <div class="bd-line-title-white"></div>
-                <h1 style="font-size: 2.5rem; font-weight: bold;">
-                  HISTORIAS <br />
-                  DE LA <br />
-                  PANDEMIA
-                </h1>
-              </div>
+              ">
+            <div class="pic-titulo pointer">
+              <div class="bd-line-title-white"></div>
+              <h1 style="font-size: 2.5rem; font-weight: bold;">
+                HISTORIAS <br />
+                DE LA <br />
+                PANDEMIA
+              </h1>
             </div>
-            <div
-              class="col-md-6 div-pic-2"
-              style="
+          </div>
+          <div class="col-md-6 div-pic-2" style="
                 background-image: url('assets/img/imprescindibles/imprescindible_LUIS_ESCUDERO.jpg');
-              "
-            ></div>
-            <div
-              class="col-md-6 div-pic-2"
-              style="
+              "></div>
+          <div class="col-md-6 div-pic-2" style="
                 background-image: url('assets/img/resilientes/resilientes_Stafford_Diaz Rojas_foto_cristian_Garcia.jpg');
-              "
-            ></div>
-          </div>
+              "></div>
         </div>
-        <div
-          class="col-md-4 div-pic-3"
-          style="
+      </div>
+      <div class="col-md-4 div-pic-3" style="
             background-image: url('assets/img/imprescindibles/imprescindible_JULIO_TAPIA.jpg');
-          "
-        ></div>
-        <div class="col-md-4">
-          <div class="row">
-            <div
-              class="col-md-6 div-pic-2"
-              style="
+          "></div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-6 div-pic-2" style="
                 background-image: url('assets/img/inolvidables/INOLVIDABLE_JULIAN_SAMAR.jpg');
-              "
-            ></div>
-            <div
-              class="col-md-6 div-pic-2"
-              style="
+              "></div>
+          <div class="col-md-6 div-pic-2" style="
                 background-image: url('assets/img/imprescindibles/imprescindible_Willy_del _Carpio_Tejada.jpg');
-              "
-            ></div>
-            <div
-              class="col-md-12 div-pic-2"
-              style="
+              "></div>
+          <div class="col-md-12 div-pic-2" style="
                 background-image: url('assets/img/resilientes/resilientes_Beatriz_Cubas_Martinez-xl.jpg');
-              "
-            ></div>
-          </div>
-        </div>
-      </div>
-      <!-- End: Fila 02 -->
-    </div>
-
-    <!-- Hero section -->
-    <div class="bg-black pt-4 pb-4">
-      <div class="container">
-        <h2>
-          Relatos de peruanos que sufren, se arriesgan y se adaptan a la nueva
-          normalidad
-        </h2>
-        <p>
-          Aplanar la curva, convertirla en una meseta, darle un martillazo: la
-          jerga de la estadística se ha colado en nuestra vida diaria. Nos hemos
-          convertido en lectores afiebrados de cifras y porcentajes que muestran
-          la evolución del coronavirus a nivel macro. Pero los números no tienen
-          rostro. No dan una idea de las personas de carne y hueso que combaten
-          esta enfermedad. No permiten conocer que un estibador de bebidas
-          gaseosas se contagió, desarrolló una crisis respiratoria y dio su
-          último respiro en el Hospital de Ate, que la cajera de un banco que
-          pone efectivo en la mano de cientos de personas llega a casa con dolor
-          de garganta, o que un empresario arequipeño ha organizado una feria
-          para cambiar zapatos por víveres.
-        </p>
-        <p>
-          En
-          <a href="https://convoca.pe/" target="_blank" class="link-on-hero"
-            >Convoca.pe</a
-          >
-          presentamos relatos de peruanos que sufren, se arriesgan y se adaptan
-          a la nueva normalidad. Con su propia voz, cuentan cómo les ha cambiado
-          la vida. Empezamos con 16 historias en formato podcast, pero vendrán
-          más.
-        </p>
-      </div>
-    </div>
-    <!-- End: Hero section -->
-
-    <!-- Message section -->
-    <div id="message_section">
-      <div class="bd-card bd-card-primary">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="bd-line-title-primary"></div>
-            <h4>Inolvidables</h4>
-          </div>
-          <div class="col-lg-9">
-            <p>
-              Son aquellos que viven en la mente de sus deudos y en la discusión
-              pública. Todos se preguntan por qué tuvieron que morir. El virus
-              se los ha llevado, pero siguen aquí.
-            </p>
-            <a href="pages/inolvidables/inolvidables.html" class="link-style">Ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="bd-card bd-card-secondary">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="bd-line-title-secondary"></div>
-            <h4>Los imprescindibles</h4>
-          </div>
-          <div class="col-lg-9">
-            <p>
-              Son quienes mantienen en pie el país, salen a trabajar protegidos
-              hasta los dientes en hospitales, bancos y mercados. Ponen el pecho
-              en nombre de todos.
-            </p>
-            <a href="pages/imprescindibles/imprescindibles.html" class="link-style">Ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="bd-card bd-card-gray">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="bd-line-title-gray"></div>
-            <h4>Los resilientes</h4>
-          </div>
-          <div class="col-lg-9">
-            <p>
-              Son aquellos que se han reinventado en medio del caos ganándole la
-              batalla a la inercia. Empresarios y trabajadores que hacen gala de
-              una gran inventiva.
-            </p>
-            <a href="pages/resilientes/resilientes.html" class="link-style">Ver más</a>
-          </div>
+              "></div>
         </div>
       </div>
     </div>
-    <!-- End: Message section -->
+    <!-- End: Fila 02 -->
+  </div>
 
-    <!-- Credits section -->
-    <div class="bg-black">
-      <div class="container pt-4 pb-2">
-        <p class="text-center text-white">
-          <strong>Créditos.</strong>
-          <strong>Coordinación general:</strong> <span style="font-weight: lighter;">Milagros Salazar y Karla Velezmoro.</span>
-          <strong>Edición de audios:</strong> <span style="font-weight: lighter;">Karla Velezmoro y Sonia Tello.</span>
-          <strong>Edición de textos:</strong> <span style="font-weight: lighter;">Ghiovani Hinojosa.</span>
-          <strong>Reporteros:</strong> <span style="font-weight: lighter;">Sonia Tello, Fiorella Montaño, Elena Miranda, Mirelis Morales, Luis Enrique Pérez y Ghiovani Hinojosa.</span>
-          <strong>Desarrollo web:</strong> <span style="font-weight: lighter;">Elvis Rivera y Anthony X.</span>
-          <strong>Diseño e ilustraciones:</strong> <span style="font-weight: lighter;">Iván Palomino.</span>
-        </p>
+  <!-- Hero section -->
+  <div class="bg-black pt-4 pb-4">
+    <div class="container">
+      <h2>
+        Relatos de peruanos que sufren, se arriesgan y se adaptan a la nueva
+        normalidad
+      </h2>
+      <p>
+        Aplanar la curva, convertirla en una meseta, darle un martillazo: la
+        jerga de la estadística se ha colado en nuestra vida diaria. Nos hemos
+        convertido en lectores afiebrados de cifras y porcentajes que muestran
+        la evolución del coronavirus a nivel macro. Pero los números no tienen
+        rostro. No dan una idea de las personas de carne y hueso que combaten
+        esta enfermedad. No permiten conocer que un estibador de bebidas
+        gaseosas se contagió, desarrolló una crisis respiratoria y dio su
+        último respiro en el Hospital de Ate, que la cajera de un banco que
+        pone efectivo en la mano de cientos de personas llega a casa con dolor
+        de garganta, o que un empresario arequipeño ha organizado una feria
+        para cambiar zapatos por víveres.
+      </p>
+      <p>
+        En
+        <a href="https://convoca.pe/" target="_blank" class="link-on-hero">Convoca.pe</a>
+        presentamos relatos de peruanos que sufren, se arriesgan y se adaptan
+        a la nueva normalidad. Con su propia voz, cuentan cómo les ha cambiado
+        la vida. Empezamos con 16 historias en formato podcast, pero vendrán
+        más.
+      </p>
+    </div>
+  </div>
+  <!-- End: Hero section -->
+
+  <!-- Message section -->
+  <div id="message_section">
+    <div class="bd-card bd-card-primary">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="bd-line-title-primary"></div>
+          <h4>Inolvidables</h4>
+        </div>
+        <div class="col-lg-9">
+          <p>
+            Son aquellos que viven en la mente de sus deudos y en la discusión
+            pública. Todos se preguntan por qué tuvieron que morir. El virus
+            se los ha llevado, pero siguen aquí.
+          </p>
+          <a href="pages/inolvidables/inolvidables.html" class="link-style">Ver más</a>
+        </div>
       </div>
     </div>
-    <!-- End: Credits section -->
 
-    <!-- Footer section -->
-    <footer class="bg-black">
-      <div class="container-fluid pt-4 pb-1 text-white">
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mb-3">
-            <img
-              class="img-fluid"
-              width="130px"
-              height="60px"
-              src="assets/img/logos/logo-white.png"
-              alt="Logo Convoca"
-            />
-          </div>
-          <div class="col-md-4 col-sm-12 text-center">
-            <span class="mr-5">Miembros de:</span>
-            <img
-              src="assets/img/logos/gobal.png"
-              alt="Global logo"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4 col-sm-12 text-right">
-            <div class="d-flex align-items-center justify-content-end">
-              <span class="navbar-text mr-2">
-                Siguenos
-              </span>
-              <a href="#" style="text-decoration: none;">
-                <div class="rounded-icon white mr-2">
-                  <i class="fab fa-facebook-f"></i>
-                </div>
-              </a>
+    <div class="bd-card bd-card-secondary">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="bd-line-title-secondary"></div>
+          <h4>Los imprescindibles</h4>
+        </div>
+        <div class="col-lg-9">
+          <p>
+            Son quienes mantienen en pie el país, salen a trabajar protegidos
+            hasta los dientes en hospitales, bancos y mercados. Ponen el pecho
+            en nombre de todos.
+          </p>
+          <a href="pages/imprescindibles/imprescindibles.html" class="link-style">Ver más</a>
+        </div>
+      </div>
+    </div>
 
-              <a href="#" style="text-decoration: none;">
-                <div class="rounded-icon white mr-2">
-                  <i class="fab fa-twitter"></i>
-                </div>
-              </a>
+    <div class="bd-card bd-card-gray">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="bd-line-title-gray"></div>
+          <h4>Los resilientes</h4>
+        </div>
+        <div class="col-lg-9">
+          <p>
+            Son aquellos que se han reinventado en medio del caos ganándole la
+            batalla a la inercia. Empresarios y trabajadores que hacen gala de
+            una gran inventiva.
+          </p>
+          <a href="pages/resilientes/resilientes.html" class="link-style">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End: Message section -->
 
-              <a href="#" style="text-decoration: none;">
-                <div style="font-size: 2rem; color: #ffffff;" class="mr-2">
-                  <i class="fab fa-whatsapp"></i>
-                </div>
-              </a>
-            </div>
+  <!-- Credits section -->
+  <div class="bg-black">
+    <div class="container pt-4 pb-2">
+      <p class="text-center text-white">
+        <strong>Créditos.</strong>
+        <strong>Coordinación general:</strong> <span style="font-weight: lighter;">Milagros Salazar y Karla
+          Velezmoro.</span>
+        <strong>Edición de audios:</strong> <span style="font-weight: lighter;">Karla Velezmoro y Sonia Tello.</span>
+        <strong>Edición de textos:</strong> <span style="font-weight: lighter;">Ghiovani Hinojosa.</span>
+        <strong>Reporteros:</strong> <span style="font-weight: lighter;">Sonia Tello, Fiorella Montaño, Elena Miranda,
+          Mirelis Morales, Luis Enrique Pérez y Ghiovani Hinojosa.</span>
+        <strong>Desarrollo web:</strong> <span style="font-weight: lighter;">Alvaro Iturrizaga</span>
+        <strong>Diseño e ilustraciones:</strong> <span style="font-weight: lighter;">Iván Palomino.</span>
+      </p>
+    </div>
+  </div>
+  <!-- End: Credits section -->
+
+  <!-- Footer section -->
+  <footer class="bg-black">
+    <div class="container-fluid pt-4 pb-3 text-white">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-3 text-center-sm">
+          <img class="img-fluid" width="130px" height="60px" src="assets/img/logos/logo-white.png" alt="Logo Convoca" />
+        </div>
+        <div class="col-md-4 col-sm-12 text-center">
+          <span class="mr-5">Miembros de:</span>
+          <img src="assets/img/logos/gobal.png" alt="Global logo" class="img-fluid" />
+        </div>
+        <div class="col-md-4 col-sm-12 text-right">
+          <div class="d-flex align-items-center justify-content-md-end justify-content-center mt-sm-4">
+            <span class="navbar-text mr-2">
+              Siguenos
+            </span>
+            <a href="https://web.facebook.com/convoca/" style="text-decoration: none;">
+              <div class="rounded-icon white mr-2">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </a>
+
+            <a href="https://twitter.com/convocape" style="text-decoration: none;">
+              <div class="rounded-icon white mr-2">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+
+            <a href="#" style="text-decoration: none;">
+              <div style="font-size: 2rem; color: #ffffff;" class="mr-2">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- End: Footer section -->
+    </div>
+  </footer>
+  <!-- End: Footer section -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/share.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/share.js"></script>
+</body>
+
 </html>

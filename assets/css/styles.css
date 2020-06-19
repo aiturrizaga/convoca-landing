@@ -11,6 +11,7 @@
   margin-right: auto;
   table-layout: fixed;
   text-align: center;
+  flex-direction: row !important;
 }
 
 .link-on-hero {
@@ -128,7 +129,7 @@
   background-color: #ffffff;
   color: #000000;
   border: 1px solid #ffffff;
-  border-left-width: .7rem;
+  border-left-width: 0.7rem;
 }
 
 .bd-card-primary {
@@ -222,7 +223,7 @@
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #ffffff;
-    border-left-width: .7rem;
+    border-left-width: 0.7rem;
   }
   .bd-card-primary {
     border-left-color: var(--lp-primary);
@@ -244,5 +245,21 @@
   }
   .pt-sm-3 {
     padding-top: 1rem;
+  }
+  .center-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.6rem;
+  }
+  .text-center-sm {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .center-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.6rem;
   }
 }
