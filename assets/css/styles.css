@@ -35,15 +35,21 @@
 }
 
 .nav-border-top-blue {
-  border-top: 0.3rem solid var(--lp-primary);
+  border-top: 0.4rem solid var(--lp-primary);
+  color: #000000 !important;
+  font-weight: bold !important;
 }
 
 .nav-border-top-red {
-  border-top: 0.3rem solid var(--lp-secondary);
+  border-top: 0.4rem solid var(--lp-secondary);
+  color: #000000 !important;
+  font-weight: bold !important;
 }
 
 .nav-border-top-gray {
-  border-top: 0.3rem solid var(--lp-gray);
+  border-top: 0.4rem solid var(--lp-gray);
+  color: #000000 !important;
+  font-weight: bold !important;
 }
 
 .navbar {
@@ -149,12 +155,12 @@
 }
 
 .bd-line-title-primary {
-  border-top: 0.2rem solid var(--lp-primary);
+  border-top: 0.4rem solid var(--lp-primary);
   width: 6rem;
 }
 
 .bd-line-title-secondary {
-  border-top: 0.2rem solid var(--lp-secondary);
+  border-top: 0.4rem solid var(--lp-secondary);
   width: 6rem;
 }
 
@@ -167,7 +173,7 @@
 }
 
 .bd-line-title-gray {
-  border-top: 0.2rem solid var(--lp-gray);
+  border-top: 0.4rem solid var(--lp-gray);
   width: 6rem;
 }
 

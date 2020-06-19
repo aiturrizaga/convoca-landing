@@ -1,6 +1,6 @@
 $(function () {
   $("#ri-grid").gridrotator({
-    rows: 2,
+    rows: 3,
     columns: 6,
     maxStep: 2,
     interval: 2000,
