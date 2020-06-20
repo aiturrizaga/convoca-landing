@@ -2,6 +2,11 @@ let musica = new Audio("https://convoca.pe/historiasdelapandemia/especial.mp3");
 const ckbEspecialAudioSM = document.getElementById("chkEspecialAudioSM");
 const ckbEspecialAudioLG = document.getElementById("chkEspecialAudioLG");
 
+$(document).ready(function () {
+  ckbEspecialAudioSM.checked = false;
+  ckbEspecialAudioLG.checked = false;
+});
+
 musica.addEventListener(
   "ended",
   function () {
@@ -26,7 +31,7 @@ musica.addEventListener(
   },
   false
 );
-musica.play();
+// musica.play();
 
 function playEspecialAudio(idChk) {
   const ckbPlayer = document.getElementById(idChk);
