@@ -5,15 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta property="og:url" content="https://convoca.pe/historiasdelapandemia/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Historias de la pandemia">
-  <meta property="og:description" content="Peruanos que sufren, se arriesgan y se adaptan a la nueva normalidad">
+  <meta property="og:url" content="https://convoca.pe/historiasdelapandemia/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Historias de la pandemia" />
+  <meta property="og:description" content="Peruanos que sufren, se arriesgan y se adaptan a la nueva normalidad" />
   <meta property="og:image"
-    content="https://convoca.pe/historiasdelapandemia/assets/img/home/imprescindible_DIANA_ALTAMIRANO.jpg">
+    content="https://convoca.pe/historiasdelapandemia/assets/img/home/imprescindible_DIANA_ALTAMIRANO.jpg" />
 
   <title>Historias de la pandemia</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/logos/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/img/logos/favicon.ico" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -35,7 +35,7 @@
 
       <div class="d-block d-lg-none ml-2">
         <label class="switch">
-          <input type="checkbox" id="chkEspecialAudioSM" checked onclick="playEspecialAudio('chkEspecialAudioSM')">
+          <input type="checkbox" id="chkEspecialAudioSM" checked onclick="playEspecialAudio('chkEspecialAudioSM')" />
           <span class="slider round"></span>
         </label>
       </div>
@@ -56,7 +56,7 @@
     <div class="d-none d-lg-block">
       <div class="d-flex flex-column align-items-end">
         <label class="switch" title="Reproducir podcast">
-          <input type="checkbox" id="chkEspecialAudioLG" checked onclick="playEspecialAudio('chkEspecialAudioLG')">
+          <input type="checkbox" id="chkEspecialAudioLG" checked onclick="playEspecialAudio('chkEspecialAudioLG')" />
           <span class="slider round"></span>
         </label>
 
@@ -89,65 +89,110 @@
   </nav>
   <!-- End: Header section -->
 
-  <div class="container-grid-images">
-    <section>
-      <div id="ri-grid" class="ri-grid ri-grid-size-3">
-        <img class="ri-loading-image" src="assets/img/grid-images/loading.gif" />
-        <ul>
-          <li><a href="#"><img src="assets/img/home/webp/resilientes_Walter_Cordova_Ramirez.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/INOLVIDABLE_JULIAN_SAMAR.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/imprescindible_DIANA_ALTAMIRANO.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/imprescindible_JAZMIN_AUCANTINCO.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/INOLVIDABLE_JOSE_SALDARRIAGA.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/imprescindible_ANA_MARIA_ANGULO.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/resilientes_Stafford_Diaz_Rojas_foto_cristian_Garcia.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/resilientes_Violenta_Quispe.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/imprescindible_ELIZABETH_NOLE.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/imprescindible_JULIO_TAPIA.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/resilientes_Beatriz_Cubas_Martinez.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/INOLVIDABLE_REMIGIO_HIDALGO.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/imprescindible_LUIS_ESCUDERO.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/imprescindible_DIANA_ALTAMIRANO.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/resilientes_Walter_Cordova_Ramirez.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/INOLVIDABLE_JOSE_SALDARRIAGA.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/resilientes_Stafford_Diaz_Rojas_foto_cristian_Garcia.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/imprescindible_ELIZABETH_NOLE.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/resilientes_Violenta_Quispe.webp" /></a></li>
-          <li><a href="#"><img src="assets/img/home/webp/imprescindible_JULIO_TAPIA.webp" /></a></li>
-        </ul>
-      </div>
+  <div id="preloader" class="div-pic-full"></div>
 
-      <header class="codrops-header-special">
-        <div class="bd-line-title-white"></div>
-        <h1 style="font-size: 2.5rem; font-weight: bold;">
-          HISTORIAS <br />
-          DE LA <br />
-          PANDEMIA
-        </h1>
-      </header>
-    </section>
-  </div>
+  <section>
+    <div id="ri-grid" class="ri-grid ri-grid-size-3">
+      <ul id="list_grid_images" class="d-none">
+        <li>
+          <a href="#"><img src="assets/img/home/webp/resilientes_Walter_Cordova_Ramirez.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/INOLVIDABLE_JULIAN_SAMAR.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/imprescindible_DIANA_ALTAMIRANO.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/imprescindible_JAZMIN_AUCANTINCO.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/INOLVIDABLE_JOSE_SALDARRIAGA.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/imprescindible_ANA_MARIA_ANGULO.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/resilientes_Stafford_Diaz_Rojas_foto_cristian_Garcia.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/resilientes_Violenta_Quispe.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/imprescindible_ELIZABETH_NOLE.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/imprescindible_JULIO_TAPIA.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/resilientes_Beatriz_Cubas_Martinez.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/INOLVIDABLE_REMIGIO_HIDALGO.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/imprescindible_LUIS_ESCUDERO.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/imprescindible_DIANA_ALTAMIRANO.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/resilientes_Walter_Cordova_Ramirez.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/INOLVIDABLE_JOSE_SALDARRIAGA.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/resilientes_Stafford_Diaz_Rojas_foto_cristian_Garcia.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/imprescindible_ELIZABETH_NOLE.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/resilientes_Violenta_Quispe.webp" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/home/webp/imprescindible_JULIO_TAPIA.webp" /></a>
+        </li>
+      </ul>
+    </div>
+
+    <header class="codrops-header-special">
+      <div class="bd-line-title-white"></div>
+      <h1 style="font-size: 2.5rem; font-weight: bold;">
+        HISTORIAS <br />
+        DE LA <br />
+        PANDEMIA
+      </h1>
+    </header>
+  </section>
 
   <!-- Hero section -->
   <div class="bg-black pt-4 pb-4">
     <div class="container">
       <h2>
-        Peruanos que mantienen vivo el recuerdo de los que partieron, se arriesgan y se adaptan a la nueva normalidad
+        Peruanos que mantienen vivo el recuerdo de los que partieron, se
+        arriesgan y se adaptan a la nueva normalidad
       </h2>
       <p>
-        Aplanar la curva, convertirla en una meseta, darle un martillazo: la jerga de la estadística se ha colado en
-        nuestra vida diaria. Nos hemos convertido en lectores afiebrados de cifras y porcentajes que muestran el impacto
-        del Covid-19 a nivel macro. Pero los números no tienen rostro. No dan una idea de las personas de carne y hueso
-        que conviven con la pandemia. No permiten conocer que un estibador de bebidas gaseosas se contagió, desarrolló
-        una crisis respiratoria y dio su último respiro en el Hospital de Ate, en Lima, que la cajera de un banco que
-        pone efectivo en la mano de cientos de personas llega a casa con dolor de garganta, o que un empresario
-        arequipeño ha organizado una feria para cambiar zapatos por víveres.
+        Aplanar la curva, convertirla en una meseta, darle un martillazo: la
+        jerga de la estadística se ha colado en nuestra vida diaria. Nos hemos
+        convertido en lectores afiebrados de cifras y porcentajes que muestran
+        el impacto del Covid-19 a nivel macro. Pero los números no tienen
+        rostro. No dan una idea de las personas de carne y hueso que conviven
+        con la pandemia. No permiten conocer que un estibador de bebidas
+        gaseosas se contagió, desarrolló una crisis respiratoria y dio su
+        último respiro en el Hospital de Ate, en Lima, que la cajera de un
+        banco que pone efectivo en la mano de cientos de personas llega a casa
+        con dolor de garganta, o que un empresario arequipeño ha organizado
+        una feria para cambiar zapatos por víveres.
       </p>
       <p>
         En
         <a href="https://convoca.pe/" target="_blank" class="link-on-hero">Convoca.pe</a>
-        presentamos relatos de peruanos que padecen, se arriesgan y se adaptan a la nueva normalidad. Con su propia voz,
-        cuentan cómo les ha cambiado la vida. Empezamos con 16 historias en formato pódcast, vendrán más.
+        presentamos relatos de peruanos que padecen, se arriesgan y se adaptan
+        a la nueva normalidad. Con su propia voz, cuentan cómo les ha cambiado
+        la vida. Empezamos con 16 historias en formato pódcast, vendrán más.
       </p>
     </div>
   </div>
@@ -163,8 +208,8 @@
         </div>
         <div class="col-lg-4">
           <p class="font-size-1">
-            Viven en la memoria de sus seres queridos y están presentes en la discusión pública. El virus se los ha
-            llevado, pero siguen aquí.
+            Viven en la memoria de sus seres queridos y están presentes en la
+            discusión pública. El virus se los ha llevado, pero siguen aquí.
           </p>
           <a href="pages/inolvidables/inolvidables.html" class="link-style">
             <div class="d-flex align-items-center">
@@ -184,8 +229,9 @@
         </div>
         <div class="col-lg-4">
           <p class="font-size-1">
-            Mantienen en pie al país, salen a trabajar con mascarilla y guantes en hospitales, bancos y mercados. Ponen
-            el pecho en nombre de todos.
+            Mantienen en pie al país, salen a trabajar con mascarilla y
+            guantes en hospitales, bancos y mercados. Ponen el pecho en nombre
+            de todos.
           </p>
           <a href="pages/imprescindibles/imprescindibles.html" class="link-style">
             <div class="d-flex align-items-center">
@@ -205,8 +251,8 @@
         </div>
         <div class="col-lg-4">
           <p class="font-size-1">
-            Han vuelto a nacer, en medio del caos, movidos por la necesidad de sobrevivencia. Trabajadores y
-            emprendedores con inventiva.
+            Han vuelto a nacer, en medio del caos, movidos por la necesidad de
+            sobrevivencia. Trabajadores y emprendedores con inventiva.
           </p>
           <a href="pages/resilientes/resilientes.html" class="link-style">
             <div class="d-flex align-items-center">
@@ -224,14 +270,19 @@
   <div class="bg-black">
     <div class="container pt-4 pb-2">
       <p class="text-center text-white">
-        <strong>Coordinación general:</strong> <span style="font-weight: lighter;">Milagros Salazar Herrera y Karla
-          Velezmoro.</span>
-        <strong>Edición de audios:</strong> <span style="font-weight: lighter;">Karla Velezmoro y Sonia Tello.</span>
-        <strong>Edición de textos:</strong> <span style="font-weight: lighter;">Ghiovani Hinojosa.</span>
-        <strong>Reporteros:</strong> <span style="font-weight: lighter;">Sonia Tello, Fiorella Montaño, Elena Miranda,
-          Mirelis Morales, Luis Enrique Pérez y Ghiovani Hinojosa.</span>
-        <strong>Desarrollo web:</strong> <span style="font-weight: lighter;">Elvis Rivera y Alvaro Iturrizaga.</span>
-        <strong>Diseño e ilustraciones:</strong> <span style="font-weight: lighter;">Iván Palomino.</span>
+        <strong>Coordinación general:</strong>
+        <span style="font-weight: lighter;">Milagros Salazar Herrera y Karla Velezmoro.</span>
+        <strong>Edición de audios:</strong>
+        <span style="font-weight: lighter;">Karla Velezmoro y Sonia Tello.</span>
+        <strong>Edición de textos:</strong>
+        <span style="font-weight: lighter;">Ghiovani Hinojosa.</span>
+        <strong>Reporteros:</strong>
+        <span style="font-weight: lighter;">Sonia Tello, Fiorella Montaño, Elena Miranda, Mirelis Morales, Luis
+          Enrique Pérez y Ghiovani Hinojosa.</span>
+        <strong>Desarrollo web:</strong>
+        <span style="font-weight: lighter;">Elvis Rivera y Alvaro Iturrizaga.</span>
+        <strong>Diseño e ilustraciones:</strong>
+        <span style="font-weight: lighter;">Iván Palomino.</span>
       </p>
     </div>
   </div>
@@ -289,6 +340,12 @@
   <script src="assets/js/jquery.gridrotator.js"></script>
   <script type="text/javascript" src="assets/js/load-grid.js"></script>
   <script type="text/javascript" src="assets/js/playmusic.js"></script>
+  <script>
+    $(window).on("load", function () {
+      $("#preloader").removeClass("div-pic-full");
+      $("#list_grid_images").removeClass("d-none");
+    });
+  </script>
 </body>
 
 </html>

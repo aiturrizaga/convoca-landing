@@ -197,6 +197,16 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.div-pic-full {
+  widows: 100%;
+  height: 100vh;
+  background-image: url(../img/home/webp/grid-image-load.webp);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .div-pic-2 {
   widows: 100%;
   height: 200px;
@@ -297,7 +307,7 @@ a img {
 
 .container-grid-images {
   position: relative;
-  background: transparent url(../img/grid-images/light.png) fixed no-repeat
+  background: transparent url(../img/home/webp/grid-image-load.webp) fixed no-repeat
     center top;
 }
 
