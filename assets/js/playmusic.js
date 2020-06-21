@@ -42,3 +42,12 @@ function playEspecialAudio(idChk) {
     musica.currentTime = 0;
   }
 }
+
+function handleClickYes() {
+  musica.play();
+  $('#advice_play_music').addClass('hidden-advice');
+}
+
+function handleClickNot() {
+  $('#advice_play_music').addClass('hidden-advice');
+}
