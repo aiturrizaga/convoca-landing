@@ -7,6 +7,21 @@ $(document).ready(function () {
   ckbEspecialAudioLG.checked = false;
 });
 
+navigator.mediaDevices
+  .getUserMedia({ audio: true })
+  .then(function (mediaStream) {
+    /* El usuario dio permisos para activar el audio */
+    musica.play();
+    recorder = new MediaRecorder(mediaStream);
+    recorder.stream.getAudioTracks().forEach(function (track) {
+      track.stop();
+    });
+  })
+  .catch(function (err) {
+    /* No tiene los permisos para usar el audio */
+    console.log("Error:", err);
+  });
+
 musica.addEventListener(
   "ended",
   function () {
@@ -45,9 +60,9 @@ function playEspecialAudio(idChk) {
 
 function handleClickYes() {
   musica.play();
-  $('#advice_play_music').addClass('hidden-advice');
+  $("#advice_play_music").addClass("hidden-advice");
 }
 
 function handleClickNot() {
-  $('#advice_play_music').addClass('hidden-advice');
+  $("#advice_play_music").addClass("hidden-advice");
 }
