@@ -31,7 +31,7 @@ musica.addEventListener(
   },
   false
 );
-// musica.play();
+// musicaTag.play();
 
 function playEspecialAudio(idChk) {
   const ckbPlayer = document.getElementById(idChk);
