@@ -303,6 +303,29 @@
   .div-pic-full {
     height: 55vh;
   }
+  .font-size-3.sm {
+    font-size: 1rem !important;
+  }
+  .d-flex-sm {
+    display: flex !important;
+  }
+  .font-size-1.sm {
+    font-size: .7rem;
+  }
+  .bd-card-list.sm {
+    padding: 10px 10px 5px 10px;
+    margin: 5px 5px 5px;
+    border-left-width: 0.3rem;
+  }
+  .w-img-card {
+    width: 55% !important;
+    height: 100% !important;
+  }
+}
+
+.w-img-card {
+  width: 48%;
+  height: 50%;
 }
 
 @media (max-width: 991.98px) {
