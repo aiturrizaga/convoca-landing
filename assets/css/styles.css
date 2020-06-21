@@ -56,6 +56,12 @@
   font-weight: bold !important;
 }
 
+.nav-border-top-light-gray {
+  border-top: 0.4rem solid #cccccc;
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+
 .navbar {
   border-bottom: 0.1rem dotted #000000;
 }
@@ -287,6 +293,9 @@
   }
   .mt-sm-4 {
     margin-top: 1.2rem;
+  }
+  .u-bootstrap-navbar-center {
+    overflow-x: scroll;
   }
   .u-bootstrap-navbar-center li {
     width: auto;
