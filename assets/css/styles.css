@@ -297,9 +297,9 @@
   .u-bootstrap-navbar-center {
     overflow-x: scroll;
   }
-  .u-bootstrap-navbar-center li {
-    width: auto;
-  }
+  /* .u-bootstrap-navbar-center li {
+    width: 12rem;
+  } */
   .div-pic-full {
     height: 55vh;
   }
