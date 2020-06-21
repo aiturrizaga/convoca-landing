@@ -29,17 +29,44 @@
 <body>
   <!-- Header section -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand center-logo d-flex align-items-center justify-content-center" href="#">
+    <a class="navbar-brand center-logo" href="#">
       <img src="assets/img/logos/logo-dark.png" class="img-fluid" width="130" height="50" alt="Convoca logo"
         loading="lazy" />
-
-      <div class="d-block d-lg-none ml-2">
-        <label class="switch">
-          <input type="checkbox" id="chkEspecialAudioSM" checked onclick="playEspecialAudio('chkEspecialAudioSM')" />
-          <span class="slider round"></span>
-        </label>
-      </div>
     </a>
+    <div class="w-100 mb-2 d-block d-lg-none">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center justify-content-center">
+          <span class="mr-2">
+            COMPARTE
+          </span>
+          <div class="d-flex align-items-center justify-content-center">
+            <a href="javascript:shareIndexOnFacebook()" style="text-decoration: none;">
+              <div class="rounded-icon dark mr-2">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+            </a>
+
+            <a href="javascript:shareIndexOnTwitter()" style="text-decoration: none;">
+              <div class="rounded-icon dark mr-2">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+
+            <a href="javascript:shareIndexOnWhatsapp()" style="text-decoration: none;">
+              <div style="font-size: 2rem; color: #000000;">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div>
+          <label class="switch">
+            <input type="checkbox" id="chkEspecialAudioSM" checked onclick="playEspecialAudio('chkEspecialAudioSM')" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
     <ul class="navbar-nav mr-auto u-bootstrap-navbar-center">
       <li class="nav-item">
         <a class="nav-link nav-border-top-blue h6" href="pages/inolvidables/inolvidables.html">Los inolvidables</a>
@@ -170,10 +197,10 @@
   <!-- Hero section -->
   <div class="bg-black pt-4 pb-4">
     <div class="container">
-      <h2>
+      <h4>
         Peruanos que mantienen vivo el recuerdo de los que partieron, se
         arriesgan y se adaptan a la nueva normalidad
-      </h2>
+      </h4>
       <p>
         Aplanar la curva, convertirla en una meseta, darle un martillazo: la
         jerga de la estadística se ha colado en nuestra vida diaria. Nos hemos

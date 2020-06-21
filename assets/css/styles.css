@@ -311,15 +311,15 @@ a img {
   border: none;
 }
 
-.container-grid-images {
+/* .container-grid-images {
   position: relative;
   background: transparent url(../img/home/webp/grid-image-load.webp) fixed
     no-repeat center top;
-}
+} */
 
 .codrops-header-special {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 0;
   text-align: left;
 }
