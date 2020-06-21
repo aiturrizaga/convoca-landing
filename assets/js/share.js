@@ -91,6 +91,10 @@ function shareCurrentPageOnWS(message = 'Historias de la pandemia') {
   void 0;
 }
 
+function redirectToPage(linkHref) {
+  window.location.href = linkHref;
+}
+
 $(document).ready(function() {
   const activeItem = false;
   if (activeItem) {
