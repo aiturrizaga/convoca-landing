@@ -236,7 +236,7 @@
 }
 
 .font-size-3 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .font-size-2 {
@@ -350,6 +350,10 @@
     border-radius: 0px;
     opacity: 1;
   }
+}
+
+.cursor-pointer-on {
+  cursor: pointer;
 }
 
 .w-img-card {
