@@ -21,7 +21,7 @@ function shareImprescindiblesOnTwitter() {
 }
 
 function shareImprescindiblesOnWhatsapp() {
-  shareCurrentPageOnws("Los imprescindibles");
+  shareCurrentPageOnWS("Los imprescindibles");
 }
 
 // Functions for "inolvidables"
