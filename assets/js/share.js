@@ -90,3 +90,11 @@ function shareCurrentPageOnWS(message = 'Historias de la pandemia') {
   );
   void 0;
 }
+
+$(document).ready(function() {
+  const activeItem = false;
+  if (activeItem) {
+    $('#hidden_item').removeClass('d-none');
+    $("#hidden_item a").attr("href", "http://www.google.com/")
+  }
+});
