@@ -56,8 +56,14 @@ function shareCurrentPageOnTW(message = 'Historias de la pandemia') {
   var dir = URI;
   var tit = message;
   var tit2 = encodeURIComponent(tit);
+  // window.open(
+  //   "http://twitter.com/?status=" + tit2 + "%20" + dir + "",
+  //   "ventana",
+  //   "width=600,height=400,left=50,top=50,toolbar=yes"
+  // );
+
   window.open(
-    "http://twitter.com/?status=" + tit2 + "%20" + dir + "",
+    "https://twitter.com/intent/tweet?text=" + tit2 + "%20" + dir + "",
     "ventana",
     "width=600,height=400,left=50,top=50,toolbar=yes"
   );
