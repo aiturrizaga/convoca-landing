@@ -51,7 +51,7 @@ function shareResilientesOnWhatsapp() {
 }
 
 // Main share functions
-function shareCurrentPageOnTW(message = 'Historias de la pandemia') {
+function shareCurrentPageOnTW(message = "Historias de la pandemia") {
   var URI = window.location.href;
   var dir = URI;
   var tit = message;
@@ -70,7 +70,7 @@ function shareCurrentPageOnTW(message = 'Historias de la pandemia') {
   void 0;
 }
 
-function shareCurrentPageOnFB(message = 'Historias de la pandemia') {
+function shareCurrentPageOnFB(message = "Historias de la pandemia") {
   var URI = window.location.href;
   var dir = URI;
   var tit = message;
@@ -84,7 +84,7 @@ function shareCurrentPageOnFB(message = 'Historias de la pandemia') {
   void 0;
 }
 
-function shareCurrentPageOnWS(message = 'Historias de la pandemia') {
+function shareCurrentPageOnWS(message = "Historias de la pandemia") {
   var URI = window.location.href;
   var dir = URI;
   var tit = message;
@@ -101,10 +101,28 @@ function redirectToPage(linkHref) {
   window.location.href = linkHref;
 }
 
-$(document).ready(function() {
+function shareWSConvoca(prefijo) {
+  var dir = "";
+  var tit = prefijo + " Hola Convoca, mi nombre es ";
+  var tit2 = encodeURIComponent(tit);
+  window.open(
+    "https://wa.me/51959249098?text=" + tit2 + "%20" + dir + "",
+    "ventana",
+    "width=600,height=400,left=50,top=50,toolbar=yes"
+  );
+  void 0;
+}
+
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
   const activeItem = false;
   if (activeItem) {
-    $('#hidden_item').removeClass('d-none');
-    $("#hidden_item a").attr("href", "http://www.google.com/")
+    $("#hidden_item").removeClass("d-none");
+    $("#hidden_item a").attr("href", "http://www.google.com/");
   }
+
+  $("#btnFloatWS").tooltip("show");
+  setTimeout(() => {
+    $("#btnFloatWS").tooltip("hide");
+  }, 5000);
 });
