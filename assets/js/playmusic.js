@@ -1,26 +1,15 @@
 let musica = new Audio("https://convoca.pe/historiasdelapandemia/especial.mp3");
 const ckbEspecialAudioSM = document.getElementById("chkEspecialAudioSM");
 const ckbEspecialAudioLG = document.getElementById("chkEspecialAudioLG");
+var riGrid = document.getElementById("gridImagesSection");
+var mc = new Hammer(riGrid);
 
 $(document).ready(function () {
+  musica.play();
   ckbEspecialAudioSM.checked = false;
   ckbEspecialAudioLG.checked = false;
+  activePanGesture();
 });
-
-navigator.mediaDevices
-  .getUserMedia({ audio: true })
-  .then(function (mediaStream) {
-    /* El usuario dio permisos para activar el audio */
-    musica.play();
-    recorder = new MediaRecorder(mediaStream);
-    recorder.stream.getAudioTracks().forEach(function (track) {
-      track.stop();
-    });
-  })
-  .catch(function (err) {
-    /* No tiene los permisos para usar el audio */
-    console.log("Error:", err);
-  });
 
 musica.addEventListener(
   "ended",
@@ -43,10 +32,10 @@ musica.addEventListener(
   function () {
     ckbEspecialAudioSM.checked = true;
     ckbEspecialAudioLG.checked = true;
+    disablePanGesture();
   },
   false
 );
-// musicaTag.play();
 
 function playEspecialAudio(idChk) {
   const ckbPlayer = document.getElementById(idChk);
@@ -58,11 +47,16 @@ function playEspecialAudio(idChk) {
   }
 }
 
-function handleClickYes() {
-  musica.play();
-  $("#advice_play_music").addClass("hidden-advice");
+function activePanGesture() {
+  mc.get("pan").set({
+    direction: Hammer.DIRECTION_VERTICAL,
+  });
+  mc.on("pan", function () {
+    musica.play();
+  });
 }
 
-function handleClickNot() {
-  $("#advice_play_music").addClass("hidden-advice");
+function disablePanGesture() {
+  mc.off("pan");
+  $("#gridImagesSection").addClass("touchImportant");
 }
