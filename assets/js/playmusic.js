@@ -8,9 +8,9 @@ $(document).ready(function () {
   let prevUrl = document.referrer;
   if (prevUrl.indexOf(window.location.host) !== -1) {
     musica.play();
-    $("#overlay").removeClass("d-lg-block");
+    $("#overlay").removeClass("d-md-block");
   } else {
-    $("#overlay").addClass("d-lg-block");
+    $("#overlay").addClass("d-md-block");
   }
   activePanGesture();
   // musica.play();
@@ -70,5 +70,5 @@ function disablePanGesture() {
 
 function offOverlay() {
   musica.play();
-  $("#overlay").removeClass("d-lg-block");
+  $("#overlay").removeClass("d-md-block");
 }
